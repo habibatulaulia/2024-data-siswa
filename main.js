@@ -29,7 +29,7 @@ export async function ambilDaftarSiswa() {
   
   let retval = [];
   querySnapshot.forEach((doc) => {
-     retval.push({ id: doc.id,nama: doc.data().nama });
+     retval.push({ id: doc.id, nama: doc.data().nama });
   });
   
   return retval;
